@@ -18,7 +18,7 @@
 ## How to Run
 ***
 
-1. unzip the archive
+1. if downloaded from the release zip, unzip the archive, otherwise skip to 2
 2. build and create the JavaFX app using the gradle wrapper 
 ```bash
 ./gradlew clean build jlink
