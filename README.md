@@ -19,43 +19,20 @@
 ***
 
 1. unzip the archive
-2. build and create the JavaFX app using the gradle wrapper, if you're on Windows use gradlew.bat
+2. build and create the JavaFX app using the gradle wrapper 
 ```bash
 ./gradlew clean build jlink
 ```
 ```ps
 ./gradlew.bat clean build jlink
 ```
-<ins>**expected output:**</ins>
-```bash
-PS C:\Users\Chris\Projects\ConwaysGameOfLife> .\gradlew.bat clean build jlink
-
-> Configure project :
-Project : => 'com.riotgames.conwaysgameoflife' Java module
-
-> Task :jlink
-Warning: The 2 argument for --compress is deprecated and may be removed in a future release
-
-Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
-
-You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
-
-For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
-
-BUILD SUCCESSFUL in 9s
-11 actionable tasks: 10 executed, 1 up-to-date
-```
 3. prepare an input file in the supported format
 4. run the application by providing the fully qualified file path, allowing the simulation to run.
 5. after the visualization closes, `./build/image/bin/output.txt` will contain the program output.
 
-<ins>**example command**</ins>:
+<ins>example</ins>:
 ```bash
 ./build/image/bin/app C:\Users\Chris\Documents\example.txt
-```
-<ins>**expected output:**</ins>
-```
-Output written to file: output.txt
 ```
 
 <ins>**NOTE**</ins>: the visualization shows a 1920x1080 centered canvas, which provides -/+ 960 , +/- 540 as a
